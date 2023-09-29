@@ -152,7 +152,7 @@ div.ki_timesheet>div#timeSheet>div#timeSheetTable>table>tbody>tr>td.username {
 #timeSheet td.description > .inner-description.open
 {
     height: auto;
-    white-space: unset;
+    white-space: pre-line;
     overflow: unset;
     cursor: auto;
 }
