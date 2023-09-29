@@ -44,7 +44,7 @@
             <td class="customer"><?php echo $this->escape($this->translate('customer')); ?></td>
             <td class="project"><?php echo $this->escape($this->translate('project')); ?></td>
             <td class="activity"><?php echo $this->escape($this->translate('activity')); ?></td>
-            <td class="description"><?php echo $this->escape($this->translate('description')); ?></td>
+            <td class="description" title="Alle Beschreibungen öffnen"><?php echo $this->escape($this->translate('description')); ?></td>
             <?php if ($this->showTrackingNumber) { ?>
                 <td class="trackingnumber"><?php echo $this->escape($this->translate('trackingNumber')); ?></td>
             <?php } ?>

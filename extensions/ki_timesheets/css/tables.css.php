@@ -132,6 +132,30 @@ div.ki_timesheet>div#timeSheet>div#timeSheetTable>table>tbody>tr>td.username {
     width:450px;
 }
 
+#timeSheet td.description > .inner-description
+{
+    height: 15.4px;
+    width: 450px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+#timeSheet td.description > .inner-description.open
+{
+    height: auto;
+    white-space: unset;
+    overflow: unset;
+    cursor: auto;
+}
+
+#timeSheet_head td.description
+{
+    cursor: pointer;
+    text-decoration: underline dotted;
+}
+
 #timeSheet_head td.from,
 #timeSheet_head td.to,
 #timeSheet td.from,

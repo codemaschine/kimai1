@@ -47,5 +47,22 @@ $(document).ready(function(){
        ts_resizeTimer = setTimeout(ts_ext_resize, 500);
     });
 
+    var description_opened = false;
+    $(document).on('click', '#timeSheet_head td.description', function() {
+        if (description_opened) {
+            description_opened = false;
+            $(this).attr('title', 'Alle Beschreibungen öffnen');
+            $('#timeSheet td.description > .inner-description').removeClass('open');
+        } else {
+            description_opened = true;
+            $(this).attr('title', 'Alle Beschreibungen schließen');
+            $('#timeSheet td.description > .inner-description').addClass('open');
+        }
+    });
+
+    $(document).on('click', '#timeSheet td.description > .inner-description', function() {
+        $(this).toggleClass('open');
+    });
+
     
 });
