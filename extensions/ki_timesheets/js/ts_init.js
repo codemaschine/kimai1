@@ -61,7 +61,7 @@ $(document).ready(function(){
     });
 
     $(document).on('click', '#timeSheet td.description > .inner-description', function() {
-        $(this).toggleClass('open');
+        $(this).addClass('open');
     });
 
     

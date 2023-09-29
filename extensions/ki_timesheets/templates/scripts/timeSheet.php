@@ -208,7 +208,7 @@ if ($this->timeSheetEntries) {
                         <textarea rows="1" style="width: 100%; resize:none" id="description_<?php echo $row['timeEntryID']; ?>" onfocus="$(this).attr('rows',3);" onfocusout="$(this).attr('rows',1);" onchange="ts_updateDescription(<?php echo $row['timeEntryID']; ?>, 0)"><?php echo htmlspecialchars($row['description']); ?></textarea>
                     <?php else: ?>
                         <div class="inner-description">
-                            <?php echo preg_replace('!(http|ftp|scp)(s)?:\/\/[a-zA-Z0-9.?&_/]+!', "<a href=\"\\0\" target=\"_blank\">\\0</a>", $this->escape($row['description'])) ?>
+                            <?php echo preg_replace('!(http|ftp|scp)(s)?:\/\/[a-zA-Z0-9.?&_/]+!', "<a href=\"\\0\" target=\"_blank\">\\0</a>", nl2br($this->escape($row['description']))) ?>
                         </div>
                     <?php endif;
                     ?></td>

@@ -142,6 +142,13 @@ div.ki_timesheet>div#timeSheet>div#timeSheetTable>table>tbody>tr>td.username {
     cursor: pointer;
 }
 
+#timeSheet td.description > .inner-description > a,
+#timeSheet td.description > .inner-description > a:visited
+#timeSheet td.description > .inner-description > a:active
+{
+    color: #0000ee;
+}
+
 #timeSheet td.description > .inner-description.open
 {
     height: auto;
