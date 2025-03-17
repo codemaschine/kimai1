@@ -153,7 +153,6 @@ div.ki_timesheet>div#timeSheet>div#timeSheetTable>table>tbody>tr>td.username {
 {
     height: auto;
     white-space: pre-line;
-    overflow: unset;
     cursor: auto;
 }
 
